@@ -1,7 +1,4 @@
 
-
-
-
 import pickle
 import tkinter
 
@@ -13,17 +10,17 @@ import matplotlib.pyplot as plt
 
 
 
-def save(model): #save the model
+def save(model):  # save the model
     filename = 'model.sav'
     pickle.dump(model, open(filename, 'wb'))
 
 
-def load(): #load the model
+def load():  # load the model
     loaded_model = pickle.load(open('model.sav', 'rb'))
     return loaded_model
 
 
-def Performancest(z, y): #Returns various metrics to the model
+def Performancest(z, y):  # Returns various metrics to the model
     return [
         accuracy_score(y, z),
         precision_score(y, z, average='macro'),
@@ -33,7 +30,7 @@ def Performancest(z, y): #Returns various metrics to the model
     ]
 
 
-def Display(res, i, num, title): #Shows results for the model
+def Display(res, i, num, title):  # Shows results for the model
     results = Toplevel()
     results.title("Results")
     results.geometry("600x600")
@@ -71,7 +68,7 @@ def Display(res, i, num, title): #Shows results for the model
     results.mainloop()
 
 
-def DisplayKmeans(res, df, i, title): #Shows results for the Kmeans model
+def DisplayKmeans(res, df, i, title):  # Shows results for the Kmeans model
     results = Toplevel()
     results.title("Results")
     results.geometry("600x600")

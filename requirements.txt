@@ -19,6 +19,7 @@ decorator==5.1.1
 defusedxml==0.7.1
 entrypoints==0.4
 executing==0.8.3
+fastjsonschema==2.16.1
 fonttools==4.31.2
 importlib-metadata==4.11.3
 ipykernel==6.9.2
@@ -82,6 +83,7 @@ stack-data==0.2.0
 terminado==0.13.3
 testpath==0.6.0
 threadpoolctl==3.1.0
+tinycss2==1.1.1
 tornado==6.1
 tqdm==4.64.0
 traitlets==5.1.1
